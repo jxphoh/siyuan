@@ -84,6 +84,7 @@ jobs:
           draft: false
           prerelease: true
           token: ${{ secrets.GITHUB_TOKEN }}
+          allowUpdates: true
 
   build:
     runs-on: ${{ matrix.config.os }}
